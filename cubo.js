@@ -20,15 +20,16 @@ class Lado {
 }
 
 const cores = {
-  branco: "#fff",
-  azul: "#00f",
-  laranja: "#f80",
-  amarelo: "#fe0",
-  vermelho: "#f00",
-  verde: "#0f0",
+  branco: "#ecf0f1",
+  azul: "#3498db",
+  laranja: "#e67e22",
+  amarelo: "#f9ca24",
+  vermelho: "#d63031",
+  verde: "#6ab04c",
 };
 
-const numBlocosPorLado = 9;
+const raizBlocosPorLado = 3;
+const numBlocosPorLado = Math.pow(raizBlocosPorLado, 2);
 
 const ladoBranco = new Lado(Array(numBlocosPorLado).fill(cores.branco));
 const ladoAzul = new Lado(Array(numBlocosPorLado).fill(cores.azul));
